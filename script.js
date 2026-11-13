@@ -138,9 +138,4 @@
       .observe(quote);
   }
 
-  // ---------- Marcações do protótipo ----------
-  $('[data-toggle-tbc]').addEventListener('click', (e) => {
-    const off = document.body.classList.toggle('hide-tbc');
-    e.currentTarget.textContent = off ? 'Mostrar marcações' : 'Ocultar marcações';
-  });
 })();

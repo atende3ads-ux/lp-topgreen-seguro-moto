@@ -14,7 +14,6 @@
   --muted: #5d6a62;
   --line: #e2e6e3;
   --asfalto: #121212;
-  --tbc: #fff2a8;
   --radius: 20px;
   --radius-sm: 14px;
   --shadow: 0 24px 60px -24px rgba(13, 53, 29, .35);
@@ -41,23 +40,8 @@ button, input, select { font: inherit; }
 .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* ---------- Marcações de protótipo ---------- */
-.proto-bar {
-  background: var(--tbc); color: #4a3d00; font-size: 13px;
-  display: flex; gap: 12px; align-items: center; justify-content: center;
-  padding: 6px 16px; flex-wrap: wrap; text-align: center;
-}
-.proto-bar__toggle {
-  background: transparent; border: 1px solid #b59b00; border-radius: 999px;
-  padding: 2px 10px; cursor: pointer; font-size: 12px; color: inherit;
-}
-mark.tbc {
-  background: var(--tbc); color: #4a3d00; padding: 1px 6px; border-radius: 6px;
-  border: 1px dashed #c9ac00; font-weight: 600; font-size: .85em; white-space: nowrap;
-}
-body.hide-tbc mark.tbc { background: none; border: 0; padding: 0; color: inherit; font-weight: inherit; font-size: inherit; }
-body.hide-tbc .proto-bar mark.tbc { background: var(--tbc); }
-body.hide-tbc .testis__note, body.hide-tbc .out__note { display: none; }
+/* ---------- Dados pendentes (discreto) ---------- */
+.pending { opacity: .6; font-style: italic; border-bottom: 1px dotted currentColor; cursor: help; }
 
 /* ---------- Tipografia base ---------- */
 .eyebrow {
@@ -275,7 +259,6 @@ body.hide-tbc .testis__note, body.hide-tbc .out__note { display: none; }
   content: "×"; position: absolute; left: 0; top: -1px; width: 19px; height: 19px; border-radius: 50%;
   background: #f2f2f2; color: #9a9a9a; display: grid; place-items: center; font-weight: 700; font-size: 15px; line-height: 1;
 }
-.out__note { grid-column: 2; font-size: 13px; }
 
 /* Preço */
 .price { overflow: hidden; padding-top: clamp(140px, 14vw, 180px); }
@@ -406,7 +389,6 @@ body.hide-tbc .testis__note, body.hide-tbc .out__note { display: none; }
 .testi blockquote { margin: 0; font-style: italic; color: var(--ink); font-size: 16px; line-height: 1.4; }
 .testi blockquote::before { content: "★★★★★"; display: block; color: var(--green); font-style: normal; letter-spacing: 2px; margin-bottom: 8px; font-size: 14px; }
 .testi figcaption { font-size: 13px; color: var(--gray); margin-top: 12px; font-weight: 600; }
-.testis__note { margin-top: 10px; font-size: 13px; }
 
 /* FAQ */
 .faq { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
@@ -507,7 +489,6 @@ body.hide-tbc .testis__note, body.hide-tbc .out__note { display: none; }
   .field-row { grid-template-columns: 1fr; gap: 0; }
   .cover-grid, .steps, .testis, .out__list { grid-template-columns: 1fr; }
   .out { grid-template-columns: 1fr; padding: 22px; }
-  .out__note { grid-column: 1; }
   .price__motos img { width: 34%; margin: 0 -5%; }
   .price__motos img:nth-child(4) { display: none; }
   .price__list li { padding: 14px 16px; }
