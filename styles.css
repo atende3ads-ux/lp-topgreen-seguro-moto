@@ -226,6 +226,8 @@ button, input, select { font: inherit; }
 .section__head { margin-bottom: 48px; }
 .section__head--center { text-align: center; }
 .section__head--center .eyebrow { justify-content: center; }
+.section__head--center .h2 { max-width: 920px; margin-left: auto; margin-right: auto; }
+.section__head--center .lead { max-width: 680px; margin-left: auto; margin-right: auto; }
 
 /* Coberturas */
 .cover-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }

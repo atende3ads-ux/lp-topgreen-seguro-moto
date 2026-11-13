@@ -1,0 +1,100 @@
+/* Phosphor Icons (fill) v2.1.1 · MIT · subconjunto usado na LP */
+@font-face {
+  font-family: "Phosphor-Fill";
+  src: url("Phosphor-Fill.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ph-fill {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Phosphor-Fill" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ph-fill.ph-buildings:before {
+  content: "\e102";
+}
+.ph-fill.ph-calendar-blank:before {
+  content: "\e10a";
+}
+.ph-fill.ph-check-circle:before {
+  content: "\e184";
+}
+.ph-fill.ph-clock-counter-clockwise:before {
+  content: "\e1a0";
+}
+.ph-fill.ph-device-mobile:before {
+  content: "\e1e0";
+}
+.ph-fill.ph-envelope-simple:before {
+  content: "\e218";
+}
+.ph-fill.ph-file-text:before {
+  content: "\e23a";
+}
+.ph-fill.ph-gauge:before {
+  content: "\e628";
+}
+.ph-fill.ph-hand-coins:before {
+  content: "\ea8c";
+}
+.ph-fill.ph-headset:before {
+  content: "\e584";
+}
+.ph-fill.ph-lock:before {
+  content: "\e2fa";
+}
+.ph-fill.ph-map-pin:before {
+  content: "\e316";
+}
+.ph-fill.ph-moped:before {
+  content: "\e824";
+}
+.ph-fill.ph-motorcycle:before {
+  content: "\e80a";
+}
+.ph-fill.ph-package:before {
+  content: "\e390";
+}
+.ph-fill.ph-paper-plane-tilt:before {
+  content: "\e398";
+}
+.ph-fill.ph-phone:before {
+  content: "\e3b8";
+}
+.ph-fill.ph-shield-check:before {
+  content: "\e40c";
+}
+.ph-fill.ph-sliders-horizontal:before {
+  content: "\e434";
+}
+.ph-fill.ph-tag:before {
+  content: "\e478";
+}
+.ph-fill.ph-users-three:before {
+  content: "\e68e";
+}
+.ph-fill.ph-whatsapp-logo:before {
+  content: "\e5d0";
+}
