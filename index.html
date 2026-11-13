@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguro de Moto a partir de R$ 49,90/mês | Roubo e Furto | Top Green Seguros</title>
+<meta name="description" content="Seguro de moto Suhai contra roubo e furto a partir de R$ 49,90 por mês, em até 12x. Aceita moto antiga, de baixa cilindrada e de entregador. Cote agora pelo WhatsApp.">
+<meta name="robots" content="noindex, nofollow"><!-- protótipo: remover na publicação final -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/asfalto.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Faixa de protótipo -->
+<div class="proto-bar" role="note">
+  <span><strong>Protótipo</strong> · itens em <mark class="tbc">amarelo</mark> aguardam confirmação do cliente</span>
+  <button type="button" class="proto-bar__toggle" data-toggle-tbc>Ocultar marcações</button>
+</div>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="#topo" class="brand" aria-label="Top Green Seguros">
+      <img src="assets/topgreen.svg" alt="" width="118" height="30">
+      <img src="assets/seguros-branco.svg" alt="" width="95" height="31">
+    </a>
+    <div class="topbar__right">
+      <span class="topbar__partner">Corretora parceira</span>
+      <img src="assets/suhai-branca.png" alt="Suhai Seguradora" width="92" height="40" class="topbar__suhai">
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--light">Seguro de moto contra roubo e furto</p>
+        <h1 class="hero__title">
+          <span class="hero__title-small">Seguro de moto</span>
+          <span class="hero__title-green">a partir de</span>
+          <span class="hero__title-big">R$&nbsp;49,90<small>/mês</small></span>
+        </h1>
+        <div class="hero__box">
+          Seguro de moto Suhai contra <strong>roubo e furto</strong>, com <strong>assistência 24h</strong>, em até <strong>12x</strong>.
+        </div>
+        <ul class="hero__checks">
+          <li>Aceita moto antiga e de baixa cilindrada</li>
+          <li>Pode usar para entrega e app</li>
+          <li>Moto financiada ou quitada</li>
+        </ul>
+        <div class="hero__seal">
+          <span class="star-badge" aria-hidden="true"><span>Roubo e furto + assistência 24h</span></span>
+          <div class="hero__seal-txt">
+            <img src="assets/suhai-branca.png" alt="Suhai Seguradora" width="110" height="48">
+            <span>A seguradora especialista em moto</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <div class="quote" id="cotar">
+        <div class="quote__head">
+          <span class="quote__live"><i></i> Cotação na hora</span>
+          <h2 class="quote__title">Quanto custa o seguro da sua moto?</h2>
+          <p class="quote__sub">Responda em 30 segundos e receba o preço no WhatsApp.</p>
+          <ol class="quote__steps" aria-hidden="true">
+            <li class="is-active" data-step-dot="1">1. Sua moto</li>
+            <li data-step-dot="2">2. Seu contato</li>
+          </ol>
+        </div>
+
+        <form class="quote__form" id="quoteForm" novalidate>
+          <fieldset class="quote__step is-active" data-step="1">
+            <legend class="sr-only">Dados da moto</legend>
+            <label class="field">
+              <span>Marca</span>
+              <select name="marca" id="marca" required>
+                <option value="">Selecione</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Modelo</span>
+              <select name="modelo" id="modelo" required disabled>
+                <option value="">Escolha a marca primeiro</option>
+              </select>
+            </label>
+            <div class="field-row">
+              <label class="field">
+                <span>Ano</span>
+                <select name="ano" id="ano" required></select>
+              </label>
+              <label class="field">
+                <span>CEP onde ela dorme</span>
+                <input name="cep" id="cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9" required>
+              </label>
+            </div>
+            <label class="check">
+              <input type="checkbox" name="trabalho" id="trabalho">
+              <span>Uso a moto para trabalhar (entregas, app, motoboy)</span>
+            </label>
+            <button type="button" class="btn btn--primary btn--block" data-next>
+              <img src="assets/icon-cotacao.svg" alt="" width="22" height="22"> Cotar agora
+            </button>
+          </fieldset>
+
+          <fieldset class="quote__step" data-step="2">
+            <legend class="sr-only">Seus dados de contato</legend>
+            <p class="quote__summary" id="motoSummary"></p>
+            <label class="field">
+              <span>Seu nome</span>
+              <input name="nome" id="nome" autocomplete="given-name" placeholder="Como podemos te chamar?" required>
+            </label>
+            <label class="field">
+              <span>WhatsApp</span>
+              <input name="whats" id="whats" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" maxlength="15" required>
+            </label>
+            <button type="submit" class="btn btn--primary btn--block">
+              <img src="assets/icon-cotacao.svg" alt="" width="22" height="22"> Ver meu preço
+            </button>
+            <button type="button" class="btn-link" data-prev>← Voltar e trocar a moto</button>
+          </fieldset>
+
+          <div class="quote__done" data-step="done" aria-live="polite">
+            <div class="quote__loader"><span></span><span></span><span></span></div>
+            <p class="quote__done-title">Calculando o preço da sua moto…</p>
+            <div class="quote__done-ok">
+              <p class="quote__done-title">Pronto, <span data-nome></span>! 🏍️</p>
+              <p>Sua cotação da <strong data-moto></strong> vai chegar no seu WhatsApp. Se preferir, chame a gente agora:</p>
+              <a class="btn btn--whats btn--block" data-whats-quote href="#" target="_blank" rel="noopener">
+                <img src="assets/icon-whatsapp.svg" alt="" width="22" height="22"> Receber no WhatsApp agora
+              </a>
+            </div>
+          </div>
+        </form>
+
+        <div class="quote__or"><span>ou</span></div>
+        <a class="btn btn--outline btn--block" data-whats href="#" target="_blank" rel="noopener">
+          <img src="assets/icon-whatsapp.svg" alt="" width="20" height="20"> Cotar direto pelo WhatsApp
+        </a>
+        <p class="quote__legal">Seus dados são usados só para a cotação. Sem compromisso.</p>
+      </div>
+    </div>
+    <div class="formas formas--hero" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <!-- O QUE COBRE -->
+  <section class="section section--light" id="coberturas">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow">O que o seguro de moto cobre</p>
+        <h2 class="h2">Proteção contra <span class="hl">roubo e furto</span> e ajuda 24h na rua</h2>
+        <p class="lead">O plano básico já protege do que mais tira o sono de quem tem moto. Você ainda pode somar coberturas, conforme a sua região.</p>
+      </header>
+
+      <div class="cover-grid">
+        <article class="cover cover--main">
+          <span class="tag">Incluído</span>
+          <div class="cover__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3"/><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M12 15v2"/></svg></div>
+          <h3>Roubo e furto</h3>
+          <p>Se levarem a sua moto e ela não for recuperada, você recebe a indenização. Vale para moto financiada ou quitada.</p>
+        </article>
+        <article class="cover cover--main">
+          <span class="tag">Incluído</span>
+          <div class="cover__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Assistência 24h</h3>
+          <p>Guincho, pane seca, pane elétrica e pneu furado, a qualquer hora do dia. <mark class="tbc" title="Confirmar lista de serviços com a Suhai">Confirmar lista de serviços</mark></p>
+        </article>
+        <article class="cover">
+          <span class="tag tag--opt">Opcional</span>
+          <div class="cover__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h4l2-5h6l2 5h4"/><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="M12 4l1.5 3h-3z"/></svg></div>
+          <h3>Colisão e perda total</h3>
+          <p>Para cobrir batidas e danos à sua moto. <mark class="tbc" title="Opcionais variam por praça (SP, RJ, MG)">Disponível conforme a praça</mark></p>
+        </article>
+        <article class="cover">
+          <span class="tag tag--opt">Opcional</span>
+          <div class="cover__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11l2 2 4-4"/></svg></div>
+          <h3>Danos a terceiros</h3>
+          <p>Se você bater em outro veículo ou causar dano a alguém, o seguro ajuda a pagar. <mark class="tbc" title="Opcionais variam por praça (SP, RJ, MG)">Disponível conforme a praça</mark></p>
+        </article>
+      </div>
+
+      <div class="out">
+        <h3 class="out__title">O que fica de fora do plano básico</h3>
+        <ul class="out__list">
+          <li>Batida na sua própria moto, se você não contratar a cobertura de colisão</li>
+          <li>Danos a outros veículos, se você não contratar a cobertura de terceiros</li>
+          <li>Acessórios e peças que não vieram de fábrica</li>
+          <li>Uso em competições, rachas e trilhas</li>
+        </ul>
+        <p class="out__note"><mark class="tbc">Validar exclusões com as condições gerais da Suhai</mark></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE O PREÇO VARIA -->
+  <section class="section section--white price" id="preco">
+    <div class="formas formas--top" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="price__motos" aria-hidden="true">
+      <img src="assets/moto-biz.webp" alt="" width="430" height="275" loading="lazy">
+      <img src="assets/moto-titan.webp" alt="" width="430" height="275" loading="lazy">
+      <img src="assets/moto-fan.webp" alt="" width="430" height="275" loading="lazy">
+      <img src="assets/moto-cb300.webp" alt="" width="430" height="275" loading="lazy">
+    </div>
+    <div class="wrap price__grid">
+      <div>
+        <h2 class="display">
+          <span class="display__green">O preço do</span>
+          <span class="display__dark">seguro</span>
+        </h2>
+        <p class="price__kicker">da sua moto depende de 3 coisas. <strong>R$&nbsp;49,90 não é pegadinha:</strong> é o ponto de partida.</p>
+      </div>
+      <ol class="price__list">
+        <li><span>01</span><div><strong>Modelo</strong>Motos mais procuradas por ladrões têm seguro mais caro.</div></li>
+        <li><span>02</span><div><strong>Ano</strong>O valor da moto na tabela muda o valor do seguro.</div></li>
+        <li><span>03</span><div><strong>Região</strong>O CEP onde a moto dorme mostra o risco do bairro.</div></li>
+      </ol>
+    </div>
+    <div class="wrap price__cta">
+      <a href="#cotar" class="btn btn--primary">
+        <img src="assets/icon-cotacao.svg" alt="" width="22" height="22"> Descobrir o preço da minha moto
+      </a>
+    </div>
+  </section>
+
+  <!-- A CONTA DA MOTO -->
+  <section class="section section--asfalto conta" id="conta">
+    <div class="wrap conta__grid">
+      <div>
+        <p class="eyebrow eyebrow--light">A conta da moto</p>
+        <h2 class="conta__title">
+          <span class="conta__small">Uma entrega por dia paga o</span>
+          <span class="conta__green">seguro da</span>
+          <span class="conta__big">sua moto.</span>
+        </h2>
+        <p class="conta__lead">R$ 49,90 por mês dá <strong>R$ 1,66 por dia</strong>. Menos do que você ganha numa única entrega.</p>
+      </div>
+      <div class="calc">
+        <label class="calc__label" for="calcEntrega">Quanto você ganha, em média, por entrega?</label>
+        <div class="calc__value"><span id="calcValor">R$ 7,00</span></div>
+        <input type="range" id="calcEntrega" min="4" max="20" step="0.5" value="7">
+        <div class="calc__result">
+          <div><strong id="calcEntregas">8</strong><span>entregas no mês pagam o seguro</span></div>
+          <div><strong id="calcPct">4%</strong><span>de uma entrega por dia</span></div>
+        </div>
+        <p class="calc__note">Cálculo com o plano a partir de R$ 49,90/mês e 30 dias. O seu preço pode variar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS SUHAI -->
+  <section class="section section--light suhai" id="suhai">
+    <div class="wrap suhai__grid">
+      <div class="suhai__photo">
+        <div class="suhai__panel" aria-hidden="true"></div>
+        <img src="assets/motociclista.webp" alt="Motociclista de camiseta verde mostrando um cadeado" width="700" height="883" loading="lazy">
+      </div>
+      <div class="suhai__copy">
+        <h2 class="suhai__title">
+          <span class="suhai__t1">Seguro</span>
+          <span class="suhai__t2">de moto</span>
+          <span class="suhai__aside">é com a seguradora SUHAI</span>
+        </h2>
+        <p class="lead">A Suhai é a maior seguradora de moto do Brasil, com cerca de <mark class="tbc" title="Luiz vai confirmar o percentual">50%</mark> das motos seguradas do país. E aceita quem outras seguradoras recusam.</p>
+        <ul class="pills">
+          <li><b>01.</b> Aceita moto mais antiga</li>
+          <li><b>02.</b> Aceita baixa cilindrada</li>
+          <li><b>03.</b> Aceita moto de entregador</li>
+          <li><b>04.</b> Contratação 100% digital</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section--dark como" id="como">
+    <div class="wrap">
+      <header class="section__head section__head--center">
+        <p class="eyebrow eyebrow--green">Como funciona</p>
+        <h2 class="h2 h2--light">Do WhatsApp à moto protegida em 4 passos</h2>
+      </header>
+      <ol class="steps">
+        <li>
+          <span class="steps__n">1</span>
+          <h3>Mande marca, modelo e ano</h3>
+          <p>Pelo formulário ou direto no WhatsApp. Não precisa de documento agora.</p>
+        </li>
+        <li>
+          <span class="steps__n">2</span>
+          <h3>Receba o preço no WhatsApp</h3>
+          <p>Um corretor da Top Green te responde com o valor da sua moto.</p>
+        </li>
+        <li>
+          <span class="steps__n">3</span>
+          <h3>Escolha o plano</h3>
+          <p>Fique só com roubo e furto ou some as coberturas que quiser.</p>
+        </li>
+        <li>
+          <span class="steps__n">4</span>
+          <h3>Pague em até 12x</h3>
+          <p>A primeira parcela é no boleto, com 3 dias para pagar.</p>
+        </li>
+      </ol>
+      <div class="como__cta">
+        <a href="#cotar" class="btn btn--primary"><img src="assets/icon-cotacao.svg" alt="" width="22" height="22"> Peça sua cotação</a>
+        <a href="#" class="btn btn--ghost" data-whats target="_blank" rel="noopener"><img src="assets/icon-whatsapp.svg" alt="" width="20" height="20" class="invert"> Mande no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA + QUEM SOMOS -->
+  <section class="section section--light" id="quem-somos">
+    <div class="wrap trust">
+      <div class="trust__about">
+        <p class="eyebrow">Quem somos</p>
+        <h2 class="h2">Top Green: corretora parceira Suhai</h2>
+        <p>A Top Green Seguros é uma corretora parceira da Suhai, com o <strong>Grupo Continental</strong> por trás. Você fala com gente de verdade, do primeiro “oi” até depois da contratação.</p>
+        <dl class="trust__data">
+          <div><dt>SUSEP</dt><dd><mark class="tbc">nº a definir</mark></dd></div>
+          <div><dt>CNPJ</dt><dd><mark class="tbc">a definir</mark></dd></div>
+        </dl>
+      </div>
+      <div class="trust__proof">
+        <div class="ra">
+          <div class="ra__badge"><span>RA</span>1000</div>
+          <div>
+            <strong>Suhai com selo RA1000 no Reclame Aqui</strong>
+            <p>O selo vai para empresas com ótimo índice de resposta e solução. <mark class="tbc">Confirmar se o selo está vigente</mark></p>
+          </div>
+        </div>
+        <div class="testis">
+          <figure class="testi">
+            <blockquote>“Espaço para depoimento de cliente da Top Green.”</blockquote>
+            <figcaption>Nome do cliente · CG 160 · São Paulo</figcaption>
+          </figure>
+          <figure class="testi">
+            <blockquote>“Espaço para depoimento de entregador que contratou o seguro.”</blockquote>
+            <figcaption>Nome do cliente · NMax · Belo Horizonte</figcaption>
+          </figure>
+        </div>
+        <p class="testis__note"><mark class="tbc">Depoimentos entram quando houver clientes</mark></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--white" id="faq">
+    <div class="wrap faq">
+      <header class="section__head">
+        <p class="eyebrow">Perguntas frequentes</p>
+        <h2 class="h2">Tire suas dúvidas sobre o seguro de moto</h2>
+      </header>
+      <div class="faq__list">
+        <details>
+          <summary>Por que o meu preço é diferente de R$ 49,90?</summary>
+          <p>R$ 49,90 por mês é o valor de partida. O preço final depende do modelo da moto, do ano e da região onde ela dorme (CEP). Motos mais visadas e bairros com mais ocorrências pagam um pouco mais.</p>
+        </details>
+        <details>
+          <summary>O que acontece se roubarem a minha moto?</summary>
+          <p>Você registra o boletim de ocorrência e avisa a Top Green. A gente abre o sinistro com a Suhai e acompanha tudo com você. Se a moto não for recuperada, você recebe a indenização prevista no plano.</p>
+        </details>
+        <details>
+          <summary>O seguro cobre batida?</summary>
+          <p>O plano básico é para roubo e furto, com assistência 24h. Para cobrir batida, contrate a cobertura opcional de colisão, disponível conforme a sua região.</p>
+        </details>
+        <details>
+          <summary>Preciso instalar rastreador?</summary>
+          <p>Depende do modelo e da região. Na cotação a gente te avisa se for preciso. <mark class="tbc">Confirmar regra com a Suhai</mark></p>
+        </details>
+        <details>
+          <summary>Posso usar a moto para fazer entregas?</summary>
+          <p>Pode. A Suhai aceita moto de entregador, motoboy e de quem trabalha com app. É só marcar essa opção na cotação.</p>
+        </details>
+        <details>
+          <summary>Quais são as formas de pagamento?</summary>
+          <p>Em até 12x. A primeira parcela é paga no boleto, com 3 dias para pagar. <mark class="tbc">Confirmar demais formas (cartão, débito)</mark></p>
+        </details>
+        <details>
+          <summary>Qual a relação entre a Top Green e a Suhai?</summary>
+          <p>A Suhai é a seguradora: é ela quem garante o seguro e paga a indenização. A Top Green é a corretora parceira: faz a sua cotação, contrata e te acompanha em tudo, inclusive em caso de sinistro.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap final__inner">
+      <span class="star-badge star-badge--sm" aria-hidden="true"><span>Em até 12x</span></span>
+      <h2 class="final__title">Proteja sua moto <span>a partir de R$ 49,90/mês</span></h2>
+      <p>Mande marca, modelo e ano. O preço chega no seu WhatsApp.</p>
+      <div class="final__ctas">
+        <a href="#cotar" class="btn btn--primary"><img src="assets/icon-cotacao.svg" alt="" width="22" height="22"> Peça sua cotação</a>
+        <a href="#" class="btn btn--light" data-whats target="_blank" rel="noopener"><img src="assets/icon-whatsapp.svg" alt="" width="20" height="20"> Mande no WhatsApp</a>
+      </div>
+    </div>
+    <div class="formas" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brands">
+      <span class="brand">
+        <img src="assets/topgreen.svg" alt="Top Green" width="118" height="30">
+        <img src="assets/seguros-branco.svg" alt="Seguros" width="95" height="31">
+      </span>
+      <img src="assets/suhai-branca.png" alt="Suhai Seguradora" width="92" height="40">
+    </div>
+    <p>Top Green Seguros · Corretora de seguros · CNPJ <mark class="tbc">a definir</mark> · SUSEP <mark class="tbc">a definir</mark><br>
+    Contato: <mark class="tbc">e-mail e telefone a definir</mark></p>
+    <p class="footer__legal">O seguro é garantido pela Suhai Seguradora. As coberturas, os preços e as condições dependem da análise de risco e das condições gerais do produto. Atendimento em SP (região metropolitana), RJ e MG.</p>
+  </div>
+</footer>
+
+<!-- Barra fixa mobile -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#cotar" class="btn btn--primary">Cotar agora</a>
+  <a href="#" class="btn btn--whats-icon" data-whats target="_blank" rel="noopener" aria-label="Cotar pelo WhatsApp"><img src="assets/icon-whatsapp.svg" alt="" width="24" height="24"></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
