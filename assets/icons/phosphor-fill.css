@@ -98,3 +98,6 @@
 .ph-fill.ph-whatsapp-logo:before {
   content: "\e5d0";
 }
+.ph-fill.ph-wrench:before {
+  content: "\e5d4";
+}
