@@ -1,7 +1,7 @@
 /* Top Green Seguros · LP Seguro de Moto (protótipo) */
 (function () {
-  // Número do WhatsApp da Top Green (DDI+DDD+número, só dígitos). Pendente: [INSERIR NÚMERO] na copy.
-  const WHATSAPP_NUMBER = '';
+  // Número do WhatsApp da Top Green (DDI+DDD+número, só dígitos): (11) 97267-0111
+  const WHATSAPP_NUMBER = '5511972670111';
   const WHATSAPP_MSG = 'Olá, quero fazer uma cotação de seguro para minha moto!';
 
   const waLink = (text) => {
